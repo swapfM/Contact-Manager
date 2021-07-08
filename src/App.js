@@ -3,6 +3,7 @@ import Header from './components/Header/Header'
 import InputContact from './components/InputContact/InputContact';
 import { v4 as uuidv4 } from 'uuid';
 import ContactList from './components/ContactList/ContactList'
+import './App.css'
 
 function App(){
   const [contacts, setContacts] = useState([]);
@@ -30,8 +31,10 @@ for(var i = 0; i < temp.length; i++) {
   return(
     <>
     <Header />
+    <div className="main">
     <InputContact addContact = {addContactFn}/>
     <ContactList contacts={contacts} deleteHandler = {deleteContact}/>
+    </div>
     </>
   )
 }

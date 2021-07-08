@@ -1,4 +1,4 @@
-
+import classes from './ContactList.module.css'
 import React from 'react'
 
 const ContactList= (props)=>{
@@ -11,16 +11,16 @@ const ContactList= (props)=>{
 
 
     return(
-        <>
+        <div className={classes.main}>
           {contacts.map((contact)=>(
 
-              <div key = {contact.id}>
+              <div key = {contact.id} className={classes.item}>
               <p>{contact.name}</p>
               <p>{contact.email}</p>
               <button onClick={()=>deleteHandler(contact.id)}>delete</button>
           </div> 
           ))}
-        </>
+        </div>
     )
 };
 

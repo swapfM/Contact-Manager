@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+.main{
+    height: 40%;
+    font-family:'Akaya Kanadaka','cursive';
+    margin-top: 60px;
+    background-color: rgb(199, 107, 207);
+    box-shadow: 2px 2px 5px 5px rgb(253, 80, 80);
+    text-align: center;
+    padding-bottom: 20px;
+}
+.formWrap{
+    padding:50px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    
+   
+}
+
+.head{
+    margin-top: 20px;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+}
+
+
+.lblhead{
+    padding-left: 10px;
+    font-size: 22px;
+}
+
+input{
+    margin-left: 10px;
+    height: 35px;
+    border-radius: 20px;
+    font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+    border:2px solid rgb(243, 158, 165);
+    padding:8px 16px;
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    line-height: 28px;
+    border: unset;
+    outline-color: rgb(84 105 212 / 0.5);
+    transition: transform 0.2s;
+}
+
+button:hover,input:hover{
+    transform: scale(1.05);
+}
+
+input:focus{
+    outline: none;
+    background-color: rgb(182, 235, 241);
+}
+
+button{
+    display: block;
+    width: 80px;
+    height: 35px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 200px;
+    transition: transform 0.2s;
+    
+    background-color: rgb(250, 109, 109);
+}
+button:hover{
+    cursor: pointer;
+    border: 2px solid pink;
+}
